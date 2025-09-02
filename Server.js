@@ -19,10 +19,6 @@ app.listen(PORT,()=>{
     console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-// app.get("/", (req,res)=>{
-//     res.send("Hello World");
-// });
-
 
 app.get("/get", async (req,res)=>{
     try{
@@ -32,12 +28,6 @@ app.get("/get", async (req,res)=>{
             res.json({Message: error.message});
         }
     });
-
-  
-// app.get("/expenses", async (req, res) => {
-//   const expenses = await Expense.find();
-//   res.json(expenses);
-// });
 
 app.post("/post", async (req,res)=>{
     try{
