@@ -9,7 +9,7 @@ app.use(cors());
 
 const PORT = 4500;
 
-mongoose.connect("mongodb://localhost:27017/EXPENSETRACKER").then(()=>{
+mongoose.connect("mongodb+srv://kaviyaselvamani18_db_user:137872@cluster0.ladxejc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
     console.log("Connected to MongoDB");    
 }).catch((error)=>{
     console.log(error.message)
